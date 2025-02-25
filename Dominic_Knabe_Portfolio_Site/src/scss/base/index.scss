@@ -1,0 +1,62 @@
+
+*{
+    font-family: poppins, sans-serif;
+    margin: 0;
+}
+
+ @import "../utils/mixins";
+ @import "../utils/variables";
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    ul{
+        justify-content: flex-end;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        list-style: none;
+    }
+
+    .hamburgerMenu{
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        span{
+            background-color: black;
+            width: 30px;
+            height: 4px;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .nav{
+       .nav__list{
+            display: none;
+        }
+        .hamburgerMenu{
+            display: flex;
+        }
+    }
+}
+
+main{
+    flex: 1;
+}
+
+
+
+footer{
+@include flex-center;
+background-color: $primary;
+}

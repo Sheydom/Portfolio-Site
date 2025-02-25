@@ -1,0 +1,50 @@
+* {
+  font-family: poppins, sans-serif;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header ul {
+  justify-content: flex-end;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+header li {
+  list-style: none;
+}
+header .hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+header .hamburgerMenu span {
+  background-color: black;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav .nav__list {
+    display: none;
+  }
+  .nav .hamburgerMenu {
+    display: flex;
+  }
+}
+main {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(52, 152, 219);
+}
