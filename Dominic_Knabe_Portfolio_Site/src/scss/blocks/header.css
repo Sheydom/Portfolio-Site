@@ -4,6 +4,7 @@
   display: flex;
   position: fixed;
   justify-content: flex-end;
+  z-index: 1000;
 }
 .header ul {
   justify-content: flex-end;

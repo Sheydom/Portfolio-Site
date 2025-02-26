@@ -16,6 +16,7 @@ footer {
   display: flex;
   position: fixed;
   justify-content: flex-end;
+  z-index: 1000;
 }
 .header ul {
   justify-content: flex-end;
@@ -59,6 +60,14 @@ footer {
     margin-right: 20px;
   }
 }
+h2 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -73,14 +82,14 @@ body {
   justify-items: center;
 }
 .bio img {
-  width: 95vw;
+  max-width: 450px;
   height: auto;
 }
 .bio article {
-  width: 95vw;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: grayscale(50%) contrast(120%);
-          backdrop-filter: grayscale(50%) contrast(120%);
+  width: 450px;
+  height: 450px;
+  background-image: url(/src/assets/IMG_2782[1].JPG);
+  background-size: cover;
 }
 .bio article p, .bio article h1, .bio article button {
   padding: 10px;
@@ -90,12 +99,11 @@ body {
 }
 
 .bio__div--backdropfilter {
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  background-color: rgb(46, 204, 113);
+  backdrop-filter: brightness(160%) blur(10px);
+  text-align: center;
 }
 
-.bio__p--text {
+.bio__p--justify {
   height: 250px;
   text-align: justify;
 }
@@ -107,8 +115,9 @@ main {
   justify-content: center;
 }
 main img {
-  width: 95vw;
-  height: auto;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
 }
 
 .shrink {

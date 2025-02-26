@@ -10,10 +10,19 @@
  @import"../blocks/footer";
  @import"../blocks/header";
 
+h2{
+    font-size: $h2size;
+}
+
+h1{
+    font-size: $h1size;
+}
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 
 
@@ -25,13 +34,16 @@ body{
     align-items: center;
     justify-items: center;
     img{
-        width: 95vw;
+        max-width: 450px;
         height: auto;
     }
     article{
-        width: 95vw;
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: grayscale(50%) contrast(120%);
+        width: 450px;
+        height: 450px;
+        background-image: url(/src/assets/IMG_2782[1].JPG);
+        // background-attachment:fixed;
+        background-size:cover;
+
         p,h1,button{
             padding: 10px;
         }
@@ -42,11 +54,12 @@ body{
 }
 
 .bio__div--backdropfilter{
-    backdrop-filter: blur(50px) ;
-    background-color: $secondary;
+    backdrop-filter: brightness(160%) blur(10px);
+    text-align: center;
+    
 }
 
-.bio__p--text{
+.bio__p--justify{
     height: 250px;
     text-align: justify;
 }
@@ -56,8 +69,9 @@ main{
     display: flex;
     @include flex-center;
     img{
-        width: 95vw;
-        height: auto;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
     }
 }
 
