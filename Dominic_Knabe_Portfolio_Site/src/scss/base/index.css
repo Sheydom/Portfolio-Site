@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+header .nav {
+  position: fixed;
+  width: 100%;
+}
 header ul {
   justify-content: flex-end;
   gap: 20px;
@@ -32,7 +36,7 @@ header .hamburgerMenu span {
 }
 
 @media (max-width: 768px) {
-  .nav .nav__list {
+  .nav .nav__list.show {
     display: none;
   }
   .nav .hamburgerMenu {
@@ -41,6 +45,21 @@ header .hamburgerMenu span {
 }
 main {
   flex: 1;
+}
+
+nav {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid red;
+}
+nav .hamburgerMenu {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.shrink {
+  transform: scaleY(0.8);
 }
 
 footer {
