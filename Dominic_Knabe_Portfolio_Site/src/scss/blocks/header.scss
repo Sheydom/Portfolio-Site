@@ -1,0 +1,58 @@
+@import"../utils/variables";
+@import"../utils/mixins";
+
+
+header{
+    background: $primary;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+      
+    ul{
+        justify-content: flex-end;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .hamburgerMenu{
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 5px;
+        border: 2px solid black;
+        span{
+            background-color: black;
+            width: 30px;
+            height: 4px;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .nav{
+        display: flex;
+
+       .nav__list{
+            display: none;
+        }
+        .show{
+            display: flex;
+        }
+        .hamburgerMenu{
+            display: flex;
+            margin-right: 20px;
+        }
+    }
+}
