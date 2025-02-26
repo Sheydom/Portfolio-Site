@@ -52,7 +52,7 @@ header .hamburgerMenu span {
   .nav .nav__list {
     display: none;
   }
-  .nav .nav__list.show {
+  .nav .show {
     display: flex;
   }
   .nav .hamburgerMenu {
