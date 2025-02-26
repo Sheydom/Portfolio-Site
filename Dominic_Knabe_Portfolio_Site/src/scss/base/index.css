@@ -74,6 +74,9 @@ header .hamburgerMenu span {
   height: 400px;
   border: 2px solid blue;
 }
+.bio button {
+  cursor: pointer;
+}
 
 .bio__p--text {
   padding: 10px;
