@@ -4,9 +4,14 @@ const bio = document.querySelector(".bio")
 const nav = document.querySelector(".nav")
 
 hamburgerMenu.addEventListener("click", ()=>{
-    nav__list.classList.toggle("show");
+    nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
 });
 
+window.addEventListener("resize",()=>{
+        
+        nav__list.classList.remove("show")
+})
+ 
 const updatePadding =()=>{
     bio.style.paddingTop= `${nav.offsetHeight}px`;
 }

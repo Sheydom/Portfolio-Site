@@ -1,6 +1,7 @@
 * {
   font-family: poppins, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,9 +19,13 @@ header ul {
   gap: 20px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
 }
 header li {
   list-style: none;
+  cursor: pointer;
 }
 header .hamburgerMenu {
   display: none;
@@ -31,16 +36,20 @@ header .hamburgerMenu span {
   background-color: black;
   width: 30px;
   height: 4px;
-  margin: 5px 0;
+  margin: 3px 0;
   transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-  .nav .nav__list.show {
+  .nav .nav__list {
     display: none;
+  }
+  .nav .nav__list.show {
+    display: flex;
   }
   .nav .hamburgerMenu {
     display: flex;
+    margin-right: 20px;
   }
 }
 main {

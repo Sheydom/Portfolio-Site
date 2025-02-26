@@ -2,6 +2,7 @@
 *{
     font-family: poppins, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
  @import "../utils/mixins";
@@ -14,17 +15,23 @@ body{
 }
 
 header{
-  .nav {position: fixed;
-   width: 100%;}
+  .nav {
+    position: fixed;
+    width: 100%;
+    }
   
     ul{
         justify-content: flex-end;
         gap: 20px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin-right: 20px;
     }
     li{
         list-style: none;
+        cursor: pointer;
     }
 
     .hamburgerMenu{
@@ -35,7 +42,7 @@ header{
             background-color: black;
             width: 30px;
             height: 4px;
-            margin: 5px 0;
+            margin: 3px 0;
             transition: 0.3s;
         }
     }
@@ -45,14 +52,21 @@ header{
 
 @media(max-width:768px){
     .nav{
-       .nav__list.show{
+   
+
+       .nav__list{
             display: none;
+        }
+        .nav__list.show{
+            display: flex;
         }
         .hamburgerMenu{
             display: flex;
+            margin-right: 20px;
         }
     }
 }
+
 
 
 
