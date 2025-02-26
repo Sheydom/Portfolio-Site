@@ -13,7 +13,7 @@ window.addEventListener("resize",()=>{
 })
  
 const updatePadding =()=>{
-    bio.style.paddingTop= `${nav.offsetHeight}px`;
+    bio.style.paddingTop= `${nav.offsetHeight+10}px`;
 }
 
 updatePadding();
