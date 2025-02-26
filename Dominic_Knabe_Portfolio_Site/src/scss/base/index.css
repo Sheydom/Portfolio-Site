@@ -10,15 +10,14 @@ footer {
   background-color: rgb(52, 152, 219);
 }
 
-header {
+.header {
   background: rgb(52, 152, 219);
-  position: fixed;
   width: 100%;
   display: flex;
-  height: auto;
+  position: fixed;
   justify-content: flex-end;
 }
-header ul {
+.header ul {
   justify-content: flex-end;
   gap: 20px;
   display: flex;
@@ -26,18 +25,18 @@ header ul {
   align-items: center;
   margin-right: 20px;
 }
-header li {
+.header li {
   list-style: none;
   cursor: pointer;
 }
-header .hamburgerMenu {
+.header .hamburgerMenu {
   display: none;
   flex-direction: column;
   cursor: pointer;
   padding: 5px;
   border: 2px solid black;
 }
-header .hamburgerMenu span {
+.header .hamburgerMenu span {
   background-color: black;
   width: 30px;
   height: 4px;
@@ -74,7 +73,7 @@ body {
 }
 .bio img {
   width: 400px;
-  height: auto;
+  height: 600px;
 }
 .bio article {
   height: 400px;

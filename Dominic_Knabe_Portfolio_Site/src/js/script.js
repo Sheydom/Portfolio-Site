@@ -2,6 +2,7 @@ const hamburgerMenu = document.getElementById("hamburgerMenu");
 const nav__list  =   document.querySelector(".nav__list");
 const bio = document.querySelector(".bio")
 const nav = document.querySelector(".nav")
+const header = document.querySelector(".header")
 
 hamburgerMenu.addEventListener("click", ()=>{
     nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
@@ -13,7 +14,7 @@ window.addEventListener("resize",()=>{
 })
  
 const updatePadding =()=>{
-    bio.style.paddingTop= `${nav.offsetHeight+10}px`;
+    bio.style.paddingTop= `${header.offsetHeight}px`;
 }
 
 updatePadding();
@@ -23,8 +24,10 @@ window.addEventListener("resize",updatePadding);
 
 window.addEventListener("scroll",()=>{
     if(window.scrollY>50){
-        nav.classList.add("shrink")
+        header.classList.add("shrink")
+        header.style.top="-5px";
     }else{
-        nav.classList.remove("shrink")
+        header.classList.remove("shrink")
+        header.style.top="0px"
     }
 })

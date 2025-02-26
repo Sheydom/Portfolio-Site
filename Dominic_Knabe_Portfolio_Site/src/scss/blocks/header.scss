@@ -2,14 +2,12 @@
 @import"../utils/mixins";
 
 
-header{
+.header{
     background: $primary;
-    position: fixed;
     width: 100%;
     display: flex;
-    height: auto;
+    position: fixed;
     justify-content: flex-end;
-      
     ul{
         justify-content: flex-end;
         gap: 20px;
