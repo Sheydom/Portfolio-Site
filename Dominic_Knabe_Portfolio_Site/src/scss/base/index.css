@@ -77,16 +77,25 @@ body {
   height: auto;
 }
 .bio article {
-  padding: 10px;
   width: 95vw;
-  background-color: rgb(46, 204, 113);
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: grayscale(50%) contrast(120%);
+          backdrop-filter: grayscale(50%) contrast(120%);
+}
+.bio article p, .bio article h1, .bio article button {
+  padding: 10px;
 }
 .bio button {
   cursor: pointer;
 }
 
+.bio__div--backdropfilter {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background-color: rgb(46, 204, 113);
+}
+
 .bio__p--text {
-  padding: 10px;
   height: 250px;
   text-align: justify;
 }
