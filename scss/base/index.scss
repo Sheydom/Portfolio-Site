@@ -33,14 +33,14 @@ body{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    img{
+    .bio__img--profile{
         max-width: 450px;
-        height: auto;
+        // height: auto;
     }
     article{
         width: 450px;
         height: 450px;
-        background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG");
+        background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"),url("/assets/IMG_2782.JPG");
         // background-attachment:fixed;
         background-size:cover;
 
@@ -63,6 +63,26 @@ body{
     height: 250px;
     text-align: justify;
 }
+
+@media(min-width:768px){
+    .bio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__img--profile{
+            height: 450px;
+            width: 450px;
+            object-fit: cover;
+            
+        }
+    
+    
+    
+    }
+    
+}
+
+
 
 main{
     flex: 1;

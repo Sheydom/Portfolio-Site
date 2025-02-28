@@ -23,6 +23,7 @@ window.addEventListener("resize",updatePadding);
 
 
 window.addEventListener("scroll",()=>{
+    nav__list.classList.remove("show");
     if(window.scrollY>50){
         header.classList.add("shrink")
         header.style.top="-5px";

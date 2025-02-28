@@ -81,14 +81,13 @@ body {
   align-items: center;
   justify-items: center;
 }
-.bio img {
+.bio .bio__img--profile {
   max-width: 450px;
-  height: auto;
 }
 .bio article {
   width: 450px;
   height: 450px;
-  background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG");
+  background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"), url("/assets/IMG_2782.JPG");
   background-size: cover;
 }
 .bio article p, .bio article h1, .bio article button {
@@ -99,7 +98,8 @@ body {
 }
 
 .bio__div--backdropfilter {
-  backdrop-filter: brightness(160%) blur(10px);
+  -webkit-backdrop-filter: brightness(160%) blur(10px);
+          backdrop-filter: brightness(160%) blur(10px);
   text-align: center;
 }
 
@@ -108,6 +108,19 @@ body {
   text-align: justify;
 }
 
+@media (min-width: 768px) {
+  .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .bio__img--profile {
+    height: 450px;
+    width: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 main {
   flex: 1;
   display: flex;
@@ -117,7 +130,8 @@ main {
 main img {
   width: 450px;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .shrink {
