@@ -98,9 +98,10 @@ body {
 }
 
 .bio__div--backdropfilter {
-  -webkit-backdrop-filter: brightness(160%) blur(10px);
-          backdrop-filter: brightness(160%) blur(10px);
+  backdrop-filter: brightness(160%) blur(10px);
   text-align: center;
+  margin: 0;
+  padding: 0%;
 }
 
 .bio__p--justify {
@@ -112,13 +113,14 @@ body {
   .bio {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
   }
   .bio__img--profile {
     height: 450px;
     width: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 main {
@@ -130,8 +132,7 @@ main {
 main img {
   width: 450px;
   height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .shrink {
