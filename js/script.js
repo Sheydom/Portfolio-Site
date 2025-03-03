@@ -32,3 +32,6 @@ window.addEventListener("scroll",()=>{
         header.style.top="0px"
     }
 })
+
+
+window.addEventListener("scroll",()=>window.scrollY-200)

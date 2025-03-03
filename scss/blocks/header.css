@@ -18,6 +18,9 @@
   list-style: none;
   cursor: pointer;
 }
+.header a {
+  text-decoration: none;
+}
 .header .hamburgerMenu {
   display: none;
   flex-direction: column;

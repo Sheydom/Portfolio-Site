@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -29,6 +33,9 @@ footer {
 .header li {
   list-style: none;
   cursor: pointer;
+}
+.header a {
+  text-decoration: none;
 }
 .header .hamburgerMenu {
   display: none;
@@ -98,8 +105,7 @@ body {
 }
 
 .bio__div--backdropfilter {
-  -webkit-backdrop-filter: brightness(160%) blur(10px);
-          backdrop-filter: brightness(160%) blur(10px);
+  backdrop-filter: brightness(160%) blur(10px);
   text-align: center;
   margin: 0;
   padding: 0%;
@@ -108,6 +114,26 @@ body {
 .bio__p--justify {
   height: 250px;
   text-align: justify;
+}
+
+#project {
+  scroll-margin-top: 20px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+main img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.shrink {
+  transform: scaleY(0.8);
 }
 
 @media (min-width: 768px) {
@@ -121,23 +147,16 @@ body {
   .bio__img--profile {
     height: 450px;
     width: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
-}
-main {
-  flex: 1;
-  display: flex;
-  display: flex;
-  justify-content: center;
-}
-main img {
-  width: 450px;
-  height: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.shrink {
-  transform: scaleY(0.8);
+  .latestprojects {
+    text-align: center;
+    width: 100%;
+  }
+  .article__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+  }
 }

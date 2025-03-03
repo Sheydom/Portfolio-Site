@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
  @import "../utils/mixins";
  @import "../utils/variables";
  @import"../blocks/footer";
@@ -65,25 +69,9 @@ body{
     text-align: justify;
 }
 
-@media(min-width:768px){
-    .bio{
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: stretch;
-        gap: 30px;
-        &__img--profile{
-            height: 450px;
-            width: 450px;
-            object-fit: cover;
-            
-        }
-       
-    
-    
-    
-    }
-    
+// the ancor link will stop just over the h1 to make it able to read
+#project{
+    scroll-margin-top: 20px;
 }
 
 
@@ -104,4 +92,36 @@ main{
 .shrink{
     transform: scaleY(0.8);
 }
+
+
+
+@media(min-width:768px){
+    .bio{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: stretch;
+        gap: 30px;
+        &__img--profile{
+            height: 450px;
+            width: 450px;
+            object-fit: cover;     
+        }
+    }
+    
+    .latestprojects{
+    text-align: center;
+        width: 100%;
+    }
+    .article__grid{
+         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        justify-items: center;
+        
+    }
+}
+
+
+
 
