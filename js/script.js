@@ -1,12 +1,26 @@
-const hamburgerMenu = document.getElementById("hamburgerMenu");
-const nav__list  =   document.querySelector(".nav__list");
+
 const bio = document.querySelector(".bio")
 const nav = document.querySelector(".nav")
 const header = document.querySelector(".header")
 
-hamburgerMenu.addEventListener("click", ()=>{
-    nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
+window.addEventListener("DOMContentLoaded",()=>{
+    fetch("header.html")
+    .then(response=> response.text())
+    .then(data=>{
+        // very important to have t he setTimeout here because of the asyncrhonus fetch browser tries to run addeventlistener on hamburger menu without being loaded in the DOM.
+        setTimeout(()=>{
+            document.getElementById("nav").innerHTML=data
+            const hamburgerMenu = document.getElementById("hamburgerMenu");
+            const nav__list  =   document.querySelector(".nav__list");
+            hamburgerMenu.addEventListener("click", ()=>{
+                nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
+        },0)
+
 });
+    })
+})
+
+
 
 window.addEventListener("resize",()=>{
         

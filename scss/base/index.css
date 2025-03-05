@@ -11,11 +11,12 @@ html {
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(52, 152, 219);
+  background-color: #D63333;
+  color: #FFFFFF;
 }
 
 .header {
-  background: rgb(52, 152, 219);
+  background: #D63333;
   width: 100%;
   display: flex;
   position: fixed;
@@ -35,6 +36,7 @@ footer {
   cursor: pointer;
 }
 .header a {
+  color: #FFFFFF;
   text-decoration: none;
 }
 .header .hamburgerMenu {
@@ -85,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #332E2E;
   align-items: center;
   justify-items: center;
 }
@@ -123,6 +126,7 @@ body {
 main {
   flex: 1;
   display: flex;
+  background-color: #8A7AE4;
   display: flex;
   justify-content: center;
 }
@@ -130,6 +134,14 @@ main img {
   width: 450px;
   height: 450px;
   object-fit: cover;
+  border-radius: 0 80px 0 80px;
+}
+main p, main h2 {
+  color: #00FFFF;
+}
+main article {
+  background-color: #332E2E;
+  border-radius: 30px 0 30px 0;
 }
 
 .shrink {

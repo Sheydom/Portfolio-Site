@@ -1,5 +1,6 @@
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(52, 152, 219);
+  background-color: #D63333;
+  color: #FFFFFF;
 }

@@ -1,5 +1,5 @@
 .header {
-  background: rgb(52, 152, 219);
+  background: #D63333;
   width: 100%;
   display: flex;
   position: fixed;
@@ -19,6 +19,7 @@
   cursor: pointer;
 }
 .header a {
+  color: #FFFFFF;
   text-decoration: none;
 }
 .header .hamburgerMenu {
