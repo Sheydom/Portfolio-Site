@@ -108,7 +108,8 @@ body {
 }
 
 .bio__div--backdropfilter {
-  backdrop-filter: brightness(160%) blur(10px);
+  -webkit-backdrop-filter: brightness(160%) blur(10px);
+          backdrop-filter: brightness(160%) blur(10px);
   text-align: center;
   margin: 0;
   padding: 0%;
@@ -133,7 +134,8 @@ main {
 main img {
   width: 450px;
   height: 450px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0 80px 0 80px;
 }
 main p, main h2 {
@@ -159,7 +161,8 @@ main article {
   .bio__img--profile {
     height: 450px;
     width: 450px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .latestprojects {
     text-align: center;
