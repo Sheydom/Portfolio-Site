@@ -9,11 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
- @import "../utils/mixins";
- @import "../utils/variables";
- @import"../blocks/footer";
- @import"../blocks/header";
- @import"../blocks/form";
+ @use "../utils/utils" as *;
+ @use "../blocks/footer" as *;
+ @use "../blocks/header" as *;
+ @use "../blocks/form" as *;
 
 h2{
     font-size: $h2size;
@@ -99,8 +98,12 @@ main{
         height: 550px;
         background-color: $accentprimary;
         border-radius: 30px 0 30px 0;
-        margin: 5px;
+        margin: 10px;
+        box-shadow: 8px 8px 8px;
+        transition: ease-in-out 0.3s;
     }
+
+
     button{
         background-color: $accentprimary;
         padding: 5px;

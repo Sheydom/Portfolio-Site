@@ -1,6 +1,6 @@
 const main = document.querySelector(".main");
 const bio = document.querySelector(".bio");
-
+const articles = document.querySelectorAll(".art");
 
 
 window.addEventListener("DOMContentLoaded",()=>{
@@ -75,3 +75,26 @@ window.addEventListener("scroll",()=>{
 
 
 window.addEventListener("scroll",()=>window.scrollY-200)
+
+
+
+articles.forEach((art)=>{
+    art.addEventListener("mouseenter",()=>{
+        articles.forEach((a)=>{
+            if(a!==art){
+                a.style.transform="scale(0.8)";
+                a.style.opacity="0.8";
+                a.style.filter="blur(3px)";
+            }
+        })
+        art.style.transform="scale(1.1)";
+    })
+    art.addEventListener("mouseleave",()=>{
+        articles.forEach((a)=>{
+            a.style.transform="scale(1)";
+            a.style.opacity="1";
+            a.style.filter="blur(0px)";
+        })
+    })
+})
+
