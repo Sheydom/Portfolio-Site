@@ -1,0 +1,11 @@
+@import"../utils/mixins";
+@import"../utils/variables";
+
+
+fieldset{
+    @include flex-column;
+}
+
+textarea{
+    resize: none;
+}

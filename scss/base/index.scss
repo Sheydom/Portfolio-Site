@@ -13,6 +13,7 @@ html{
  @import "../utils/variables";
  @import"../blocks/footer";
  @import"../blocks/header";
+ @import"../blocks/form";
 
 h2{
     font-size: $h2size;
@@ -84,17 +85,26 @@ main{
     background-color: $secondary;
     @include flex-center;
     img{
-        width: 450px;
-        height: 450px;
         object-fit: cover;
+        max-width:100%;
+        height: 100%;
         border-radius: 0 80px 0 80px;
     }
-    p,h2{
+    p,h2,a{
         color: $accent3rd;
     }
     article{
+        @include flex-column;
+        width: 550px;
+        height: 550px;
         background-color: $accentprimary;
         border-radius: 30px 0 30px 0;
+        margin: 5px;
+    }
+    button{
+        background-color: $accentprimary;
+        padding: 5px;
+        cursor: pointer;
     }
 }
 
@@ -127,7 +137,7 @@ main{
     .article__grid{
          width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
         justify-items: center;
         
     }
