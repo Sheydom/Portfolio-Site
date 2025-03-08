@@ -1,3 +1,9 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+@use "../blocks/footer.scss" as *;
+@use "../blocks/header" as *;
+@use "../blocks/form" as *;
+@use "../blocks/buttons.scss" as *;
 
 *{
     font-family: poppins, sans-serif;
@@ -9,10 +15,7 @@ html{
     scroll-behavior: smooth;
 }
 
- @use "../utils/utils" as *;
- @use "../blocks/footer" as *;
- @use "../blocks/header" as *;
- @use "../blocks/form" as *;
+
 
 h2{
     font-size: $h2size;
@@ -50,13 +53,11 @@ body{
         background-size:cover;
       
         
-        p,h1,button{
+        p,h1{
             padding: 10px;
         }
     }
-    button{
-        cursor: pointer;
-    }
+  
 }
 
 .bio__div--backdropfilter{
@@ -82,6 +83,7 @@ main{
     flex: 1;
     display: flex;
     background-color: $secondary;
+    padding-bottom: 50px;
     @include flex-center;
     img{
         object-fit: cover;
@@ -103,14 +105,11 @@ main{
         transition: ease-in-out 0.3s;
     }
 
-
-    button{
-        background-color: $accentprimary;
-        padding: 5px;
-        cursor: pointer;
-    }
 }
 
+.mainone{
+    transition: ease-in-out 0.3s;
+}
 
 
 .shrink{

@@ -1,0 +1,15 @@
+.bio button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+main button {
+  background-color: #332E2E;
+  padding: 5px;
+  cursor: pointer;
+}
+
+form button {
+  padding: 10px;
+  color: white;
+}

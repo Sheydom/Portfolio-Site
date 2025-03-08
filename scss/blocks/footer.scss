@@ -1,7 +1,9 @@
 @use "../utils/mixins" as *;
-@use "../utils/utils" as *;
+@use "../utils/variables" as *;
+
 footer{
     @include flex-center;
-    background-color: $primary;
+    background-color:$primary;
     color: $accentsecondary;
-    }
+    transition: transform 0.3s ease-in-out;
+}

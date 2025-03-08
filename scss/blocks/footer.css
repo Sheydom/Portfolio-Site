@@ -3,4 +3,5 @@ footer {
   justify-content: center;
   background-color: #D63333;
   color: #FFFFFF;
+  transition: transform 0.3s ease-in-out;
 }

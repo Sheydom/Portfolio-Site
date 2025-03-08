@@ -1,6 +1,8 @@
 const main = document.querySelector(".main");
 const bio = document.querySelector(".bio");
 const articles = document.querySelectorAll(".art");
+const footer = document.querySelector(".footer");
+const mainone = document.querySelector(".mainone");
 
 
 window.addEventListener("DOMContentLoaded",()=>{
@@ -88,13 +90,19 @@ articles.forEach((art)=>{
             }
         })
         art.style.transform="scale(1.1)";
+        // footer.style.transform="translateY(20px)";
+        //  mainone.style.paddingBottom="50px";
+        
     })
     art.addEventListener("mouseleave",()=>{
         articles.forEach((a)=>{
             a.style.transform="scale(1)";
             a.style.opacity="1";
             a.style.filter="blur(0px)";
+            
         })
+        // footer.style.transform="translateY(0px)";
+        // mainone.style.transform="translateY(0px)";
     })
 })
 

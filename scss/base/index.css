@@ -1,19 +1,9 @@
-* {
-  font-family: poppins, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@us "../utils/mixins";
 footer {
   display: flex;
   justify-content: center;
   background-color: #D63333;
   color: #FFFFFF;
+  transition: transform 0.3s ease-in-out;
 }
 
 .header {
@@ -70,14 +60,82 @@ footer {
     margin-right: 20px;
   }
 }
-fieldset {
+h1 {
+  margin: 20px;
+}
+
+.cdiv {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  animation: rotat 2s ease-in;
+  border: 5px solid green;
 }
 
 textarea {
+  text-align: center;
   resize: none;
+}
+
+form {
+  display: flex;
+  animation: topdown 2s ease-in;
+  flex-direction: column;
+}
+
+label {
+  width: 100%;
+}
+label input {
+  background-color: white;
+  opacity: 0.5;
+}
+
+textarea {
+  display: block;
+  background-color: white;
+  opacity: 0.5;
+}
+
+@keyframes topdown {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotat {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bio button {
+  cursor: pointer;
+  padding: 10px;
+}
+
+main button {
+  background-color: #332E2E;
+  padding: 5px;
+  cursor: pointer;
+}
+
+form button {
+  padding: 10px;
+  color: white;
+}
+
+* {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -111,11 +169,8 @@ body {
   background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"), url("/assets/IMG_2782.JPG");
   background-size: cover;
 }
-.bio article p, .bio article h1, .bio article button {
+.bio article p, .bio article h1 {
   padding: 10px;
-}
-.bio button {
-  cursor: pointer;
 }
 
 .bio__div--backdropfilter {
@@ -138,6 +193,7 @@ main {
   flex: 1;
   display: flex;
   background-color: #8A7AE4;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -162,10 +218,9 @@ main article {
   box-shadow: 8px 8px 8px;
   transition: ease-in-out 0.3s;
 }
-main button {
-  background-color: #332E2E;
-  padding: 5px;
-  cursor: pointer;
+
+.mainone {
+  transition: ease-in-out 0.3s;
 }
 
 .shrink {

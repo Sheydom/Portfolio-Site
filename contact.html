@@ -15,13 +15,18 @@
     </header>
     <main class="main">
         <form action="" id="form">
-            <fieldset>
-                <h1>i am glad hearing from you</h1>
-            <input type="email" name="email" id="" required placeholder="your email">
-            <input type="text" name="namet" id="" required placeholder="your name">
+            <h1>i am glad hearing from you</h1>
+            <div class="cdiv">
+            <label for="email" class="main__label--email"> Email
+            <input type="email" name="email" id="email" required placeholder="your email">
+            </label>
+            <label for="name" class="main__label--name">Name
+            <input type="text" name="name" id="name" required placeholder="your name">
+            </label>
+        </div>
             <textarea name="message" placeholder="your message" rows="10"  id="textarea"></textarea>
             <button type="submit" id="submit">Submit</button>
-        </fieldset>
+        
         </form>
     </main>
     <!-- dynamic loaded footer -->
