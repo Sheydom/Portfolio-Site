@@ -4,4 +4,6 @@ footer {
   background-color: #D63333;
   color: #FFFFFF;
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  font-size: 0.8rem;
 }

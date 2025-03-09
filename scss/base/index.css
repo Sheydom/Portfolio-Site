@@ -4,6 +4,8 @@ footer {
   background-color: #D63333;
   color: #FFFFFF;
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  font-size: 0.8rem;
 }
 
 .header {
@@ -197,6 +199,7 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
 }
 

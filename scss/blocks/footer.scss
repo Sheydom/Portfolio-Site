@@ -6,4 +6,6 @@ footer{
     background-color:$primary;
     color: $accentsecondary;
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    font-size: $footersize;
 }
