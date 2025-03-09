@@ -5,6 +5,7 @@
   position: fixed;
   justify-content: flex-end;
   z-index: 1000;
+  transition: ease-in-out 0.3s;
 }
 .header ul {
   justify-content: flex-end;
@@ -21,6 +22,13 @@
 .header a {
   color: #FFFFFF;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.header a:hover {
+  color: #00FFFF;
+}
+.header a:focus {
+  outline: 2px solid #00FFFF;
 }
 .header .hamburgerMenu {
   display: none;

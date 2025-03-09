@@ -43,11 +43,11 @@ body{
     justify-items: center;
     .bio__img--profile{
         max-width: 450px;
-        // height: auto;
+         height: 100%;
     }
     article{
         width: 450px;
-        height: 450px;
+        height: 100%;
         background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"),url("/assets/IMG_2782.JPG");
         // background-attachment:fixed;
         background-size:cover;

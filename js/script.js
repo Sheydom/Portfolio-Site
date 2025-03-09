@@ -14,13 +14,27 @@ window.addEventListener("DOMContentLoaded",()=>{
             document.getElementById("nav").innerHTML=data;
             const hamburgerMenu = document.getElementById("hamburgerMenu");
             const nav__list  =   document.querySelector(".nav__list");
+            const header = document.querySelector(".header")
             hamburgerMenu.addEventListener("click", ()=>{
                 nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
         })
 
             updatePadding();
+            window.addEventListener("scroll",()=>{
+   
+                nav__list.classList.remove("show")
+
+                    if(window.scrollY>50){
+                    header.classList.add("shrink")
+                    header.style.top="-5px";
+                }
+                else{
+                    header.classList.remove("shrink")
+                    header.style.top="0px"
+                }
+            })
+
             window.addEventListener("resize",()=>{
-        
                 nav__list.classList.remove("show")
         })
     })
@@ -64,18 +78,17 @@ const updatePadding =()=>{
 window.addEventListener("resize",updatePadding);
 
 
-window.addEventListener("scroll",()=>{
+// window.addEventListener("scroll",()=>{
    
-    if(nav__list.classList.remove("show")){
-        if(window.scrollY>50){
-        header.classList.add("shrink")
-        header.style.top="-5px";
-    }else{
-        header.classList.remove("shrink")
-        header.style.top="0px"
-    }}
-    
-})
+//     nav__list.classList.remove("show")
+//         if(window.scrollY>50){
+//         header.classList.add("shrink")
+//         header.style.top="-5px";
+//     }else{
+//         header.classList.remove("shrink")
+//         header.style.top="0px"
+//     }
+// })
 
 
 window.addEventListener("scroll",()=>window.scrollY-200)

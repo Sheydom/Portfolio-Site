@@ -1,6 +1,14 @@
+button:focus {
+  outline: 2px solid #00FFFF;
+}
+
 .bio button {
   cursor: pointer;
   padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+.bio button:hover {
+  background-color: #00FFFF;
 }
 .bio__button--bright {
   background-color: white;
@@ -10,11 +18,20 @@
   background-color: black;
   color: white;
 }
+.bio__button--dark:hover {
+  color: black;
+}
 
 main button {
   background-color: #332E2E;
   padding: 5px;
   cursor: pointer;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+main button:hover {
+  background-color: #00FFFF;
+  color: black;
 }
 
 form button {
