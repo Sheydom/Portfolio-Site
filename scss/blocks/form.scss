@@ -33,6 +33,7 @@ form{
     flex-direction: column;
     height: fit-content;
     width: fit-content;
+    width: 80%;
 }
 
 
@@ -73,3 +74,8 @@ form{
         opacity: 1;
     }
     
+    @media(min-width:768px){
+        form{
+            width: 30%;
+        }
+    }

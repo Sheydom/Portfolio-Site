@@ -70,11 +70,6 @@ footer {
     margin-right: 20px;
   }
 }
-@media (min-width: 768px) {
-  .hamburgerMenu {
-    color: yellow;
-  }
-}
 h1 {
   margin: 20px;
 }
@@ -105,6 +100,7 @@ form {
   flex-direction: column;
   height: fit-content;
   width: fit-content;
+  width: 80%;
 }
 
 textarea {
@@ -137,6 +133,11 @@ button:focus, input:focus, textarea:focus {
   opacity: 1;
 }
 
+@media (min-width: 768px) {
+  form {
+    width: 30%;
+  }
+}
 button:focus {
   outline: 3px solid #00FFFF;
 }
