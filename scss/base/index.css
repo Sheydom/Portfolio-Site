@@ -74,6 +74,15 @@ h1 {
   margin: 20px;
 }
 
+form {
+  display: flex;
+  animation: grow_form 2s ease-in;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  width: 30%;
+}
+
 .cdiv {
   display: flex;
   justify-content: space-between;
@@ -82,7 +91,8 @@ h1 {
 .cdiv input {
   background-color: white;
   opacity: 0.5;
-  max-width: 300px;
+  width: auto;
+  border: 5px solid yellow;
 }
 
 textarea {
@@ -93,15 +103,6 @@ textarea {
 
 .textarea_label {
   width: 100%;
-}
-
-form {
-  display: flex;
-  animation: grow_form 2s ease-in;
-  flex-direction: column;
-  height: fit-content;
-  width: fit-content;
-  width: 80%;
 }
 
 textarea {
@@ -134,11 +135,6 @@ button:focus, input:focus, textarea:focus {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  form {
-    width: 30%;
-  }
-}
 button:focus {
   outline: 3px solid #00FFFF;
 }
