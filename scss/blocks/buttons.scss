@@ -8,8 +8,19 @@
         padding: 10px;
     }
 
+    &__button--bright{
+        background-color: white;
+        color: black;
+    }
+
+    &__button--dark{
+        background-color: black;
+        color: white;
+    }
     
 }
+
+
 
 main{
     button{

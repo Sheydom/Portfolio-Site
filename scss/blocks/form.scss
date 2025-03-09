@@ -4,13 +4,18 @@ h1{
     margin: 20px
 }
 
+
+
 .cdiv{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     animation: rotat 2s ease-in;
-    border: 5px solid green;
- 
+
+    input{
+        background-color:white;
+        opacity: 0.5;
     }
+}
 
 textarea{
     text-align: center;
@@ -21,17 +26,12 @@ form{
     display: flex;
     animation: topdown 2s ease-in;
     flex-direction: column;
+    height: fit-content;
+    width: fit-content;
 }
 
-label{
 
-    // text-align: center;
-    width: 100%;
-    input{
-        background-color:white;
-        opacity: 0.5;
-    }
-}
+
     textarea{
         display: block;
         background-color:white;

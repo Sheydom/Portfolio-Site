@@ -4,9 +4,12 @@ h1 {
 
 .cdiv {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   animation: rotat 2s ease-in;
-  border: 5px solid green;
+}
+.cdiv input {
+  background-color: white;
+  opacity: 0.5;
 }
 
 textarea {
@@ -18,14 +21,8 @@ form {
   display: flex;
   animation: topdown 2s ease-in;
   flex-direction: column;
-}
-
-label {
-  width: 100%;
-}
-label input {
-  background-color: white;
-  opacity: 0.5;
+  height: fit-content;
+  width: fit-content;
 }
 
 textarea {

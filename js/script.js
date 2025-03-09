@@ -16,9 +16,13 @@ window.addEventListener("DOMContentLoaded",()=>{
             const nav__list  =   document.querySelector(".nav__list");
             hamburgerMenu.addEventListener("click", ()=>{
                 nav__list.classList.contains("show")? nav__list.classList.remove("show") : nav__list.classList.add("show");
-        },0)
+        })
 
             updatePadding();
+            window.addEventListener("resize",()=>{
+        
+                nav__list.classList.remove("show")
+        })
     })
     
     fetch("components/footer.html")
@@ -31,10 +35,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 
-window.addEventListener("resize",()=>{
-        
-        nav__list.classList.remove("show")
-})
+
  
 // function to have the content always below the navbar as the navbar is fixed and out of the DOM flow so use js to calculate the propper padding-top accordlingy to the height of the header navbar 
 
@@ -64,15 +65,16 @@ window.addEventListener("resize",updatePadding);
 
 
 window.addEventListener("scroll",()=>{
-    
-    nav__list.classList.remove("show");
-    if(window.scrollY>50){
+   
+    if(nav__list.classList.remove("show")){
+        if(window.scrollY>50){
         header.classList.add("shrink")
         header.style.top="-5px";
     }else{
         header.classList.remove("shrink")
         header.style.top="0px"
-    }
+    }}
+    
 })
 
 
@@ -84,9 +86,9 @@ articles.forEach((art)=>{
     art.addEventListener("mouseenter",()=>{
         articles.forEach((a)=>{
             if(a!==art){
-                a.style.transform="scale(0.8)";
-                a.style.opacity="0.8";
-                a.style.filter="blur(3px)";
+                // a.style.transform="scale(0.8)";
+                // a.style.opacity="0.8";
+                // a.style.filter="blur(3px)";
             }
         })
         art.style.transform="scale(1.1)";

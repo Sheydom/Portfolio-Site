@@ -2,6 +2,14 @@
   cursor: pointer;
   padding: 10px;
 }
+.bio__button--bright {
+  background-color: white;
+  color: black;
+}
+.bio__button--dark {
+  background-color: black;
+  color: white;
+}
 
 main button {
   background-color: #332E2E;
