@@ -225,19 +225,15 @@ body {
 }
 
 .bio__div--backdropfilter {
-  backdrop-filter: brightness(160%) blur(10px);
+  backdrop-filter: brightness(100%) blur(10px);
   text-align: center;
   margin: 0;
-  padding: 0%;
+  padding: 0;
 }
 
 .bio__p--justify {
   height: 250px;
   text-align: justify;
-}
-
-#project {
-  scroll-margin-top: 20px;
 }
 
 main {

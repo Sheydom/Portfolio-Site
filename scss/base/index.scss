@@ -83,10 +83,10 @@ body{
 
 
 .bio__div--backdropfilter{
-    backdrop-filter: brightness(160%) blur(10px);
+    backdrop-filter: brightness(100%) blur(10px);
     text-align: center;
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
 .bio__p--justify{
@@ -94,10 +94,6 @@ body{
     text-align: justify;
 }
 
-// the ancor link will stop just over the h1 to make it able to read
-#project{
-    scroll-margin-top: 20px;
-}
 
 
 
