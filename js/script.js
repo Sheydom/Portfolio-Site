@@ -86,9 +86,9 @@ articles.forEach((art)=>{
     art.addEventListener("mouseenter",()=>{
         articles.forEach((a)=>{
             if(a!==art){
-                // a.style.transform="scale(0.8)";
-                // a.style.opacity="0.8";
-                // a.style.filter="blur(3px)";
+                 //a.style.transform="scale(0.8)";
+                 //a.style.opacity="0.8";
+                 //a.style.filter="blur(3px)";
             }
         })
         art.style.transform="scale(1.1)";

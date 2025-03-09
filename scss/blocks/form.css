@@ -19,7 +19,7 @@ textarea {
 
 form {
   display: flex;
-  animation: topdown 2s ease-in;
+  animation: grow_form 2s ease-in;
   flex-direction: column;
   height: fit-content;
   width: fit-content;
@@ -31,9 +31,12 @@ textarea {
   opacity: 0.5;
 }
 
-@keyframes topdown {
+@keyframes grow_form {
   0% {
     transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);

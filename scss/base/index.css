@@ -81,7 +81,7 @@ textarea {
 
 form {
   display: flex;
-  animation: topdown 2s ease-in;
+  animation: grow_form 2s ease-in;
   flex-direction: column;
   height: fit-content;
   width: fit-content;
@@ -93,9 +93,12 @@ textarea {
   opacity: 0.5;
 }
 
-@keyframes topdown {
+@keyframes grow_form {
   0% {
     transform: scale(0.1);
+  }
+  90% {
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -176,6 +179,23 @@ body {
 }
 .bio article p, .bio article h1 {
   padding: 10px;
+}
+
+.main__ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  color: #00FFFF;
+  list-style: none;
+  flex-direction: column;
+}
+
+.main__li {
+  padding: 5px;
+}
+
+.main__h1--bright {
+  color: #00FFFF;
 }
 
 .bio__div--backdropfilter {

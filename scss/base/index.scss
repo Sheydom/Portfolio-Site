@@ -60,6 +60,28 @@ body{
   
 }
 
+
+    .main__ul{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        color: $accent3rd;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .main__li{
+        padding: 5px; 
+    }
+
+ 
+
+.main__h1--bright{
+    color: $accent3rd;
+}
+
+
+
 .bio__div--backdropfilter{
     backdrop-filter: brightness(160%) blur(10px);
     text-align: center;
