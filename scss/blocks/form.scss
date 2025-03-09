@@ -11,28 +11,30 @@ form{
     display: flex;
     animation: grow_form 2s ease-in;
     flex-direction: column;
-    height: fit-content;
-    width: fit-content;
-    width: 30%;
+    width: 300px;
     
 }
 
 .cdiv{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     animation: rotat 2s ease-in;
+
 
     input{
         background-color:white;
         opacity: 0.5;
-        width: auto;
+        width: 60%;
     }
 }
 
 textarea{
     text-align: center;
     resize: none;
-    width: 100%;
+    width: 100%; 
+    display: block;
+    background-color:white;
+    opacity: 0.5;
     }
 
 .textarea_label{
@@ -40,13 +42,6 @@ textarea{
 }
 
 
-
-
-    textarea{
-        display: block;
-        background-color:white;
-        opacity: 0.5;
-    }
 
      @keyframes grow_form {
          0%{
