@@ -36,7 +36,7 @@ footer {
   color: #00FFFF;
 }
 .header a:focus {
-  outline: 2px solid #00FFFF;
+  outline: 3px solid #00FFFF;
 }
 .header .hamburgerMenu {
   display: none;
@@ -85,6 +85,11 @@ h1 {
 textarea {
   text-align: center;
   resize: none;
+  width: 100%;
+}
+
+.textarea_label {
+  width: 100%;
 }
 
 form {
@@ -120,8 +125,13 @@ textarea {
     transform: rotate(360deg);
   }
 }
+button:focus, input:focus, textarea:focus {
+  outline: 3px solid #00FFFF;
+  opacity: 1;
+}
+
 button:focus {
-  outline: 2px solid #00FFFF;
+  outline: 3px solid #00FFFF;
 }
 
 .bio button {
@@ -200,7 +210,7 @@ body {
 .bio article {
   width: 450px;
   height: 100%;
-  background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"), url("/assets/IMG_2782.JPG");
+  background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.jpeg"), url("/assets/IMG_2782.jpeg");
   background-size: cover;
 }
 .bio article p, .bio article h1 {
@@ -225,7 +235,9 @@ body {
 }
 
 .bio__div--backdropfilter {
-  backdrop-filter: brightness(100%) blur(10px);
+  font-weight: bold;
+  background: rgba(192, 212, 11, 0.5);
+  backdrop-filter: contrast(1) blur(5px);
   text-align: center;
   margin: 0;
   padding: 0;
@@ -233,7 +245,7 @@ body {
 
 .bio__p--justify {
   height: 250px;
-  text-align: justify;
+  text-align: start;
 }
 
 main {

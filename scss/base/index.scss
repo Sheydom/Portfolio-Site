@@ -48,7 +48,7 @@ body{
     article{
         width: 450px;
         height: 100%;
-        background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.JPG"),url("/assets/IMG_2782.JPG");
+        background-image: url("https://sheydom.github.io/Portfolio-Site/assets/IMG_2782.jpeg"),url("/assets/IMG_2782.jpeg");
         // background-attachment:fixed;
         background-size:cover;
       
@@ -83,7 +83,9 @@ body{
 
 
 .bio__div--backdropfilter{
-    backdrop-filter: brightness(100%) blur(10px);
+    font-weight: bold;
+    background: rgba(192, 212, 11, 0.5); 
+    backdrop-filter:  contrast(1) blur(5px);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -91,7 +93,7 @@ body{
 
 .bio__p--justify{
     height: 250px;
-    text-align: justify;
+    text-align:start;
 }
 
 

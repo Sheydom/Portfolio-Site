@@ -28,7 +28,7 @@
   color: #00FFFF;
 }
 .header a:focus {
-  outline: 2px solid #00FFFF;
+  outline: 3px solid #00FFFF;
 }
 .header .hamburgerMenu {
   display: none;

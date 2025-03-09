@@ -20,7 +20,12 @@ h1{
 textarea{
     text-align: center;
     resize: none;
+    width: 100%;
     }
+
+.textarea_label{
+    width: 100%;
+}
 
 form{
     display: flex;
@@ -62,3 +67,9 @@ form{
           
                  }
     }
+
+    button:focus,input:focus,textarea:focus{
+        outline: 3px solid $accent3rd;
+        opacity: 1;
+    }
+    
